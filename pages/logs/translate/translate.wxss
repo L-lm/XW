@@ -1,0 +1,110 @@
+/* pages/logs/translate/translate.wxss */
+.search{
+  background-color: #f2f2f2;
+  height: 120rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  
+}
+.search-img{
+  /* padding-top: 20rpx; */
+  margin-top: 20rpx;
+  width:100rpx;
+  height: 84rpx;
+  line-height: 84rpx;
+  font-size:27rpx;
+  color: white;
+  background-color:rgb(74, 74, 129);
+  border-radius: 10rpx;
+  /* margin-left: 10rpx; */
+}
+.search input{
+  height: 70%;
+  width: 600rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  border: 1rpx solid silver ;
+  border-radius: 10rpx;
+}
+.placeholder{
+  font-size: 24rpx;
+  color: #d1d1d1;
+  margin-left: 20rpx;
+}
+.search-pannel{
+  position: absolute;
+  top: 80px;
+}
+.xx-img{
+  height: 30rpx;
+  width: 30rpx;
+  top: 50rpx;
+  left: 570rpx;
+  position: absolute;
+}
+.clue{
+	text-align: center;
+	margin-top: 100rpx;
+}
+.detail-container{
+	display: flex;
+	flex-direction: column;
+  margin: 20rpx; 
+  color:gray;
+  font-size: 30rpx;
+}
+.header{
+  padding-bottom: 20rpx;
+}
+.hr{
+	width: 700rpx;
+	border: 1rpx solid gainsboro;
+  text-align: center;
+}
+.row{
+	display: flex;
+	flex-direction: row;
+	margin-top: 20rpx;
+  
+}
+.title{
+	width: 150rpx;
+	height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+	border: 1rpx solid rgb(74, 74, 129);
+	border-radius: 20rpx;
+  color: rgb(74, 74, 129);
+  white-space: nowrap
+
+}
+.txt{
+	font-size: 28rpx;
+  width: 600rpx;
+  margin-left: 15rpx;
+	position: relative;
+ 	white-space: inherit;
+  padding-top: 5rpx;
+}
+.result-container{
+	padding: 20rpx;
+}
+.top{
+	text-align: center;
+	margin: 100rpx;
+}
+.clues{
+	text-align: center;
+	margin: 70rpx 60rpx;
+}
+.ex{
+	font-size: 31rpx;
+	color: white;
+	padding: 5rpx;
+	border: 1rpx solid rgb(74, 74, 129);
+	border-radius: 10rpx;
+	margin-left: 10rpx;
+	background-color: rgb(74, 74, 129);
+}

@@ -1,0 +1,13 @@
+<template name="newTempalte">
+<view class="new-container">
+	<view class="left">
+		<text class="head-txt">{{title}}</text>
+    <view class="from">来源:{{description}}</view>
+		<view class="time">发布时间:{{ctime}}</view>
+	</view>	
+    <view class="right">
+		<image class="head-img" src="{{picUrl}}"></image>
+	</view>
+</view>
+<view class="hr"></view>
+</template>

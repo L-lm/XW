@@ -1,0 +1,21 @@
+<!--pages/logs/news/more-news/more-news.wxml-->
+<import src="../searchHot/searchHot-template.wxml" />
+<import src="../new/new-template.wxml" />
+<view class="more-container">
+	<view wx:if="{{hotsShow}}">
+		<block wx:for="{{urlResult}}" wx:for-item="hot">
+		    <template is="searchHotTempalte" data="{{...hot}}"></template>
+		</block>
+	</view>
+	<view wx:if="{{inNewsShow}}">
+		<block wx:for="{{urlResult}}" wx:for-item="inNews">
+		    <template is="newTempalte" data="{{...inNews}}"></template>
+        <!-- <text>hahha</text> -->
+		</block>
+	</view>
+	<view wx:if="{{outNewsShow}}">
+		<block wx:for="{{urlResult}}" wx:for-item="outNews">
+		    <template is="newTempalte" data="{{...outNews}}"></template>
+		</block>
+	</view>
+</view>

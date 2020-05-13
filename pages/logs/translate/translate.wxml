@@ -1,0 +1,94 @@
+<!--pages/logs/translate/translate.wxml-->
+<!-- <button catchtap="getSearch">翻译</button> -->
+<view class="search">
+  <input type="text" value="{{inputValue}}" placeholder="杯弓蛇影" placeholder-class="placeholder" bindfocus="onBindFocus" confirm-type="done" bindconfirm="onBindConfirm" bindinput="onValue"/>
+  <!-- <image class="xx-img" wx:if="{{clueImg}}" src="/images/x.jpg"  bindtap="onCancelImg"></image> 
+  <icon type="search"  class="search-img" bindtap="onBindTap" ></icon>-->
+  <button class="search-img" bindtap="onBindTap">搜索</button>
+</view>
+<view class="begin_container" wx:if="{{beginShow}}">
+	<view class="clue">
+		<text>请输入你要查询的四字成语，如‘杯弓蛇影’\n或者需要查询的成语中包含的相关汉字</text>
+	</view>
+</view> 
+ <view class="detail-container" wx:if="{{detailShow}}">
+	<text class="header">成语详情</text>
+	<view class="hr"></view>
+  <view class="row">
+		<view class="title">
+			<text>成语</text>
+		</view>
+			<text class="txt" >{{detailData.name}}</text>
+	</view>
+	<view class="row">
+		<view class="title">
+			<text>拼音</text>
+		</view>
+			<text class="txt" >{{detailData.pinyin}}</text>
+	</view>
+	<view class="row">
+		<view class="title">
+			<text>拼音</text>
+		</view>
+		<text class="txt">{{detailData.chengyujs}}</text>
+	</view>
+	<view class="row">
+		<view class="title ">
+			<text>成语出处</text>
+		</view>
+		<text class="txt">{{detailData.from_}}</text>
+	</view>
+	<view class="row">
+		<view class="title ">
+			<text>举例</text>
+		</view>
+		<text class="txt">{{detailData.example}}</text>
+	</view>
+	<view class="row">
+		<view class="title ">
+			<text>语法</text>
+		</view>
+		<text class="txt">{{detailData.yufa}}</text>
+	</view>
+	<view class="row">
+		<view class="title ">
+			<text>英文解释</text>
+		</view>
+		<text class="txt">{{detailData.ciyuji}}</text>
+	</view>
+	<view class="row">
+		<view class="title ">
+			<text>引证解释</text>
+		</view>
+		<text class="txt">{{detailData.yinzhengjs}}</text>
+	</view>
+	<view class="row">
+		<view class="title ">
+			<text>同义词</text>
+		</view>
+		<text class="txt">{{detailData.tongyi}}</text>
+	</view>
+	<view class="row">
+		<view class="title ">
+			<text>反义词</text>
+			</view>
+		<text class="txt">{{detailData.fanyi}}</text>
+	</view>
+</view>
+<view class="result-container" wx:if="{{clueShow}}">
+	<view class="top">
+		<text>Sorry!没有搜索到相关成语的详细信息...</text>
+	</view>
+	<view class="hr"></view>
+	<view class="botton">
+		<text>你是否是想搜索以下成语：</text>
+		<view class="clues">
+			<text class="ex">塞翁失马</text>
+			<text class="ex">马失前蹄</text>
+			<text class="ex">马不停蹄</text>
+			<text class="ex">马首是瞻</text>
+		</view>
+	</view>
+</view>
+
+ 

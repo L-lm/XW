@@ -1,0 +1,36 @@
+<!--logs.wxml-->
+<view class="title">
+		<image  class="headimg" src="{{dayImg}}" mode="widthFix" ></image>
+		<view class="headtitle">
+			<view class="english" >
+				<text>{{dayEnglish}}</text>
+      </view>
+			<view  class="chinese">
+				<text class="chi">{{dayChinese}}</text>
+			</view>
+		</view>
+</view>
+<view class="logs-container">
+	<view class="log-list">
+		<view class="info translate" bindtap="TranslateTap">
+			<image class="img" src="../../images/translate.png"></image>
+			<text class="txt">成语字典</text>
+		</view>
+		<view class="info movie" bindtap="MovieTap">
+			<image class="img" src="../../images/movie.jpg"></image>
+			<text class="txt">热门电影</text>
+		</view>  
+	</view>
+	<view class="log-list">
+		<view class="info book" bindtap="BookTap">
+			<image class="img" src="../../images/book.jpg"></image>
+			<text class="txt">热门图书</text>
+		</view>
+		<view class="info news" bindtap="NewsTap">
+			<image class="img" src="../../images/news.jpg"></image>
+			<text class="txt">热门新闻</text>
+		</view>
+	  
+	</view>
+</view>
+

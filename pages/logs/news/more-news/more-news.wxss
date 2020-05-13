@@ -1,0 +1,6 @@
+/* pages/logs/news/more-news/more-news.wxss */
+@import "../searchHot/searchHot-template.wxss";
+@import "../new/new-template.wxss";
+.more-container{
+	margin: auto;
+}

@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/logs/news/news",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/clock/clock",
+    "pages/logs/movies/movies",
+    "pages/logs/movies/movie-detail/movie-detail",
+    "pages/logs/movies/more-movie/more-movie",
+    "pages/logs/translate/translate",
+    "pages/logs/news/more-news/more-news"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "主页",
+        "iconPath": "/images/logs.jpg",
+        "selectedIconPath": "/images/loged.jpg"
+      },
+      {
+        "pagePath": "pages/clock/clock",
+        "text": "番茄钟",
+        "iconPath": "/images/clock.jpg",
+        "selectedIconPath": "/images/clocked.jpg"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

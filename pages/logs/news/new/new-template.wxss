@@ -1,0 +1,36 @@
+.new-container{
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+	margin: 15rpx;
+	padding: 20rpx;
+
+}
+.left{
+	width: 400rpx;
+}
+.head-txt{
+	width: 350rpx;
+	font-size: 29rpx;
+}
+.from{
+	margin-top: 20rpx;
+	font-size: 23rpx;
+}
+.time{
+	margin-top:10rpx ;
+	font-size: 23rpx;
+}
+.head-img{
+
+	height: 200rpx;
+}
+.right{
+	width: 270rpx;
+
+}
+.hr{
+	width: 90%;
+	margin: auto;
+	border: 0.5rpx solid #e2e2e2;
+}

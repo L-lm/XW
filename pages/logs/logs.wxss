@@ -1,0 +1,62 @@
+.logs-container{
+	display: flex;
+	flex-direction: column;
+}
+.title{
+	margin-bottom: 50rpx;
+}
+.headimg{
+	width: 100%;
+}
+.headtitle{
+	position: absolute;
+	color: gray;
+	word-break: keep-all;
+	word-wrap: break-word;
+	top: 0;
+	left: 0;
+}
+.chinese{
+	margin: 20rpx 10rpx;
+}
+.english{
+	margin: 20rpx 10rpx;
+}
+.chi{
+  /* word-break: keep-all; */
+  word-wrap: break-word;
+}
+.log-list {
+  display: flex;
+  flex-direction: row;
+  width:450rpx;
+  height: 200rpx;
+  padding: 25rpx 50rpx;
+  margin: auto;
+}
+.movie{
+	margin-left: 50rpx;
+}
+.news{
+	margin-left: 50rpx;
+}
+.info{
+	width: 200rpx;
+	height: 200rpx;
+	border: 1rpx solid gray;
+	border-radius: 20rpx;
+	display: flex;
+	flex-direction: column;
+	background-color:#EDEDED;
+	box-shadow: 2rpx 3rpx 3rpx gray;
+}
+.img{
+	width:100rpx;
+	height: 100rpx;
+	margin: 30rpx auto;
+}
+.txt{
+	text-align: center;
+	font-size: 24rpx;
+
+}

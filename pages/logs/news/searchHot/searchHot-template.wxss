@@ -1,0 +1,46 @@
+.hot-container{
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	margin: 15rpx;
+	border: 1rpx solid #EDEDED;
+	/* padding: 15rpx; */
+}
+.hot{
+	display: flex;
+	flex-direction: row;
+	height: 50rpx;
+	margin: 10rpx;
+	line-height: 50rpx;
+	font-size: 30rpx;
+}
+.txt{
+  margin-left: 20rpx;
+  white-space: nowrap;
+  width: 800rpx;
+}
+.head{
+	/* border: 1rpx solid black; */
+	background-color: white;
+	width:50rpx;
+	text-align: center;
+	line-height: 50rpx;	
+	font-weight: 600;
+	color: #ff5500;
+}
+.right{
+	float: right;
+	display: flex;
+	flex-direction: row-reverse;
+}
+.num{
+	font-size: 27rpx;
+	color: gray;
+	/* vertical-align:middle; */
+	line-height: 55rpx;
+	/* float: right; */
+}
+.huo-img{
+	width: 50rpx;
+	height: 50rpx;
+}

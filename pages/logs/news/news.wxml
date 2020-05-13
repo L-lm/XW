@@ -1,0 +1,53 @@
+<!--pages/logs/news/news.wxml-->
+<import src="searchHot/searchHot-template.wxml" />
+<import src="new/new-template.wxml" />
+<view class="navbar">
+  <view wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index? 'active' : ''}}" wx:key="unique" bindtap='navbarTap'>{{item}}</view>
+</view>
+  <!-- 加载更多hidden="{{showThis}}" -->
+  <view class="loading" wx-if="{{showThis}}" >
+    <!-- <image src="{{icon}}"></image> -->
+    <text>{{iconText}}</text>
+  </view>
+<!-- 内容 -->
+<view >
+<scroll-view class="scrolly" style="height:{{scrollHeight}}rpx" scroll-y="true" scroll-x="false" bindscrolltoupper="ScrollToupper" data-id="{{currentTab}}" >
+  <!-- 热搜部分 bindscrolltoupper="onscrollToupper"lower-threshold="50" -->
+  <view hidden="{{currentTab !==0}}">
+    <view class="search-hot box">
+      <block wx:for="{{newsResult}}" wx:for-item="hot">
+        <template is="searchHotTempalte" data="{{...hot}}"></template>
+      </block>
+    </view>
+  </view>
+
+  <!-- 社会新闻-->
+  <view hidden="{{currentTab !==1}}" data-id="{{hahah}}">
+    <view class="in-news box">
+      <block wx:for="{{newsResult}}" wx:for-item="inNews">
+        <template is="newTempalte" data="{{...inNews}}"></template>
+      </block>
+    </view>
+  </view>
+
+  <!-- 国际新闻 -->
+  <view hidden="{{currentTab !==2}}">
+    <view class="out-news box">
+      <block wx:for="{{newsResult}}" wx:for-item="outNews">
+        <template is="newTempalte" data="{{...outNews}}"></template>
+      </block>
+    </view>
+  </view>
+
+  <!-- 娱乐新闻 -->
+  <view hidden="{{currentTab !==3}}">
+    <view class="yule-news box">
+      <block wx:for="{{newsResult}}" wx:for-item="yuleNews">
+        <template is="newTempalte" data="{{...yuleNews}}"></template>
+      </block>
+    </view>
+  </view>
+
+
+  </scroll-view>
+</view>

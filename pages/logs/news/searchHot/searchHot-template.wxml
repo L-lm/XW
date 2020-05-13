@@ -1,0 +1,12 @@
+<template name="searchHotTempalte">
+<view class="hot-container">
+	<view class="hot">
+		<view class="head">{{id}}</view>
+		<view class="txt">{{hotword}}</view>
+    <view class="right">
+    	<view class="num">{{hotwordnum}}</view>
+       <image class="huo-img" src="/images/huo.png"></image>
+    </view>
+	</view>
+</view>
+</template>
